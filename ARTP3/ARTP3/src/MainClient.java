@@ -16,6 +16,8 @@ public class MainClient {
         if(args.length == 3) {
             echoTCPClient.setTestClient(true);
             System.out.println("TestingClient");
+        }else{
+            System.out.println("To end the connection AND the server, send EndConnection");
         }
         echoTCPClient.Client(args[0], port);
     }
